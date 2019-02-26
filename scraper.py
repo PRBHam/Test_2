@@ -6,12 +6,15 @@ import lxml.html
 #
 # # Read in a page
 html = scraperwiki.scrape("https://www.sdlauctions.co.uk/property-list/")
-# Print the variable html containing the webpage
-print(html)
+# Print the variable html containing the webpage - don't forget to commit changes!
+# print(html)
 #
 # # Find something on the page using css selectors
-# root = lxml.html.fromstring(html)
-# root.cssselect("div[align='left']")
+root = lxml.html.fromstring(html)
+#Change "div[align='left']" to a different CSS selector to grab something else
+root.cssselect("li p a")
+matchedlinks=root.cssselect("li p a")
+print(matchedlinks)
 #
 # # Write out to the sqlite database using scraperwiki library
 # scraperwiki.sqlite.save(unique_keys=['name'], data={"name": "susan", "occupation": "software developer"})
