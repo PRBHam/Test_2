@@ -18,7 +18,7 @@ print(matchedlinks)
 #Loop through the items in matchedlinks, calling each one li
 for li in matchedlinks:
 # Store the text contents of li in a new variable listtext
-listtext = li.text_content()
+  listtext = li.text_content()
 # print that
 print(listtext)
   # # Write out to the sqlite database using scraperwiki library
