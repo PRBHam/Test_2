@@ -20,7 +20,7 @@ for li in matchedlinks:
 # Store the text contents of li in a new variable listtext
   listtext = li.text_content()
 # print that
-print(listtext)
+  print(listtext)
   # # Write out to the sqlite database using scraperwiki library
 # scraperwiki.sqlite.save(unique_keys=['name'], data={"name": "susan", "occupation": "software developer"})
 #
