@@ -14,7 +14,7 @@ root = lxml.html.fromstring(html)
 #Change "div[align='left']" to a different CSS selector to grab something else
 root.cssselect("li p a")
 matchedlinks=root.cssselect("li p a")
-print(matchedlinks)
+# print(matchedlinks)
 #Loop through the items in matchedlinks, calling each one li
 for li in matchedlinks:
 # Store the text contents of li in a new variable listtext
